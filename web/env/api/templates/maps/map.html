@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_65c14a1cb5f24a8c91c27967f9d350a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_65c14a1cb5f24a8c91c27967f9d350a7" ></div>
+        
+</body>
+<script>    
+    
+            var map_65c14a1cb5f24a8c91c27967f9d350a7 = L.map(
+                "map_65c14a1cb5f24a8c91c27967f9d350a7",
+                {
+                    center: [41.2357, -8.6199],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1020c1fa8cd74f6d94547fc2b7e929dc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_65c14a1cb5f24a8c91c27967f9d350a7);
+        
+    
+            var marker_21f373aa115f473f94d4ba2e97d468b6 = L.marker(
+                [41.2357, -8.6199],
+                {}
+            ).addTo(map_65c14a1cb5f24a8c91c27967f9d350a7);
+        
+    
+        var popup_0885d7995c2c4cbf8e71d3b9100988a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5f714db750d458abfbdfcf41c511a60 = $(`<div id="html_d5f714db750d458abfbdfcf41c511a60" style="width: 100.0%; height: 100.0%;"><strong>Vieira Eletricista</strong></div>`)[0];
+            popup_0885d7995c2c4cbf8e71d3b9100988a0.setContent(html_d5f714db750d458abfbdfcf41c511a60);
+        
+
+        marker_21f373aa115f473f94d4ba2e97d468b6.bindPopup(popup_0885d7995c2c4cbf8e71d3b9100988a0)
+        ;
+
+        
+    
+    
+            marker_21f373aa115f473f94d4ba2e97d468b6.bindTooltip(
+                `<div>
+                     Clicar para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

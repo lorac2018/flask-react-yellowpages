@@ -1,0 +1,14 @@
+
+{% block content %}
+{% for empresa in empresas %}
+<ul>
+    <li>id : {{empresa.id}}</li>
+    <li>nome: {{ empresa.nome }}</li>
+    <li>telefone: {{ empresa.telefone }}</li>
+    <li>morada: {{ empresa.morada }}</li>
+    <li>codigopostal: {{ empresa.codigopostal }}</li>
+    <li>freguesia: {{ empresa.freguesia }}</li>
+    <li>count: {{ empresa.count }}</li>
+</ul>
+{% endfor %}
+{% endblock %}

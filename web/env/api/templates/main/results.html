@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for results in results %}
+        <article class="media content-section">
+                      <div class="media-body">
+                <a class="mr-2" href="#">{{ results.nome }}</a>
+                <a class="mr-2" href="#">{{ results.freguesia }}</a>          
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

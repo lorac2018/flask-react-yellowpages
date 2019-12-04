@@ -1,0 +1,36 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: '.'
+      dockerfile: './web/env/Dockerfile'
+    expose: 
+      - '5000'
+    networks: 
+      - 'react-python-compose'
+    volumes:
+      - './web/env:/web/env' 
+      - '/web/env/node_modules' 
+
+  frontend:
+    build:
+      context: '.'
+      dockerfile: './app/Dockerfile'
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    networks: 
+      - 'react-python-compose'
+    depends_on:
+      - 'backend'
+    volumes:
+      - './app/src:/app/src'
+      - '/app/node_modules'
+    
+
+volumes:
+  data: {}
+
+networks: 
+  'react-python-compose':
